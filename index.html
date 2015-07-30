@@ -12,12 +12,13 @@
     	</ul>
 		</div>
 		<div>
+			<input ng-model="textQuote" placeholder="Quote"></input>
+			<input ng-model="authorQuote" placeholder="Author"></input>
 			<button ng-click="quotesAdd()">Add Quote</button>
-			<input></input>
-			<button>Remove Quote</button>
-			<input></input>
-			<button>Filter Quotes</button>
-			<input></input>
+			<input ng-model="removeQuote"></input>
+			<button ng-click="quotesRemove()">Remove Quote</button>
+			<input ng-model="quotes() | filter: text"></input>
+			
 		</div>
 	
 		
