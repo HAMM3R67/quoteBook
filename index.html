@@ -4,33 +4,20 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>	
 		<body ng-controller="mainCtrl">
-		<p>{{test}}</p>	
-		
-		
-		
-		
-		
-		
-		
-		
-  		
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
+		<div>
+		<ul>
+	      <li ng-repeat="quote in quotes">
+	        {{quote.text}} -{{quote.author}}
+	      </li>
+    	</ul>
+		</div>
+		<div>
+			<button ng-click="quote">Add Quote</button>
+			<button>Remove Quote</button>
+			<button>Filter Quotes</button>
+			
+		</div>
+	
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="js/app.js"></script>
