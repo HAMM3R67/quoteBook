@@ -9,8 +9,8 @@ app.controller('mainCtrl', function($scope, QuoteFactory){
 		QuoteFactory.addData(newQuote);
 	};
 	
-	$scope.quotesRemove = function(text){
+	$scope.quotesRemove = function(){
 		$scope.textRemove = "";
-		QuoteFactory.removeData(text)
+		QuoteFactory.removeData(textRemove);
 			};
 });
