@@ -5,20 +5,26 @@
 	</head>	
 		<body ng-controller="mainCtrl">
 		<div>
+			<div>
+				<input ng-model="textQuote" placeholder="Quote"></input>
+			</div>
+			<div>	
+				<input ng-model="authorQuote" placeholder="Author"></input>
+			</div>	
+				<button ng-click="quotesAdd()">Add Quote</button>
+			
 		<ul>
 	      <li ng-repeat="quote in quotes">
 	        {{quote.text}} -{{quote.author}}
 	      </li>
     	</ul>
-		</div>
-		<div>
-			<input ng-model="textQuote" placeholder="Quote"></input>
-			<input ng-model="authorQuote" placeholder="Author"></input>
-			<button ng-click="quotesAdd()">Add Quote</button>
-			<input ng-model="removeQuote"></input>
-			
-			<button ng-click="quotesRemove()">Remove Quote</button>
-			<input ng-model="quotes() | filter: text"></input>
+			<div>
+				<input ng-model="textRemove" placeholder="Quote to Remove"></input>
+				<button ng-click="quotesRemove(textRemove)">Remove Quote</button>
+			</div>
+			<br />
+				
+				<input ng-model="quotes() | filter: text" placeholder="Filter"></input>
 			
 		</div>
 	
