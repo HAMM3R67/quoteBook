@@ -13,5 +13,7 @@ app.controller('mainCtrl', function($scope, QuoteFactory){
 		QuoteFactory.removeData($scope.textRemove);
 	};
 			
-	$scope.searchTerm = "";		
+	$scope.searchTerm = "";	
+	
+	$scope.category = "";	
 });

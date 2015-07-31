@@ -35,7 +35,14 @@
 			</div>
 			<br />
 				
-				<input type="text" ng-model="searchTerm" placeholder="Filter"></input>
+			<div>	
+				Filter by Category: <select ng-model="categoryFilter | filter: searchTerm">
+					<option value="inspirational">Inspirational</option>
+					<option value="positive">Positive</option>
+					<option value="life">Life</option>
+					<option value="motivational">Motivational</option>
+				</select>	
+			</div>
 			
 		</div>
 	
