@@ -21,7 +21,7 @@ app.factory('QuoteFactory', function(){
 	}
 	QuoteFactory.removeData = function(textR){
 		for(var i = 0; i < quotes.length; i++){
-			if(textR === quotes.text){
+			if(quotes[i].text === textR[i]){
 				quotes.splice(i,1);
 			}
 		}

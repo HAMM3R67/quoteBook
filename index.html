@@ -16,7 +16,7 @@
 				<button ng-click="quotesAdd()">Add Quote</button>
 			
 		<ul>
-	      <li ng-repeat="quote in quotes">
+	      <li ng-repeat="quote in quotes | filter: searchTerm">
 	        {{quote.text}} -{{quote.author}}
 	      </li>
     	</ul>
@@ -26,7 +26,7 @@
 			</div>
 			<br />
 				
-				<input ng-model="quotes() | filter: text" placeholder="Filter"></input>
+				<input ng-model="searchTerm" placeholder="Filter"></input>
 			
 		</div>
 	
