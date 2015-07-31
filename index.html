@@ -13,16 +13,16 @@
 				<input ng-model="authorQuote" placeholder="Author"></input>
 			</div>	
 			<br />
-				<button ng-click="quotesAdd()">Add Quote</button>
+				<button id="buttonA" ng-click="quotesAdd()">Add Quote</button>
 			
 		<ul>
-	      <li ng-repeat="quote in quotes | filter: searchTerm">
+	      <li id="quoteText" ng-repeat="quote in quotes | filter: searchTerm">
 	        {{quote.text}} -{{quote.author}}
 	      </li>
     	</ul>
 			<div>
 				<input ng-model="textRemove" placeholder="Quote to Remove"></input>
-				<button ng-click="quotesRemove(textRemove)">Remove Quote</button>
+				<button id="buttonR" ng-click="quotesRemove(textRemove)">Remove Quote</button>
 			</div>
 			<br />
 				

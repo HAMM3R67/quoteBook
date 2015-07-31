@@ -10,10 +10,8 @@ app.controller('mainCtrl', function($scope, QuoteFactory){
 	};
 	
 	$scope.quotesRemove = function(text){
-		var textRemove = {};
-		textRemove.text = $scope.textQuote;
-		QuoteFactory.removeData(textRemove);
-			};
+		QuoteFactory.removeData($scope.textRemove);
+	};
 			
 	$scope.searchTerm = "";		
 });
