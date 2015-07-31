@@ -6,11 +6,11 @@
 		<body ng-controller="mainCtrl">
 		<div>
 			<div>
-				<input ng-model="textQuote" placeholder="Quote"></input>
+				<input type="text" ng-model="textQuote" placeholder="Quote"></input>
 			</div>
 			<br />
 			<div>	
-				<input ng-model="authorQuote" placeholder="Author"></input>
+				<input type="text" ng-model="authorQuote" placeholder="Author"></input>
 			</div>	
 			<br />
 				<button id="buttonA" ng-click="quotesAdd()">Add Quote</button>
@@ -21,12 +21,12 @@
 	      </li>
     	</ul>
 			<div>
-				<input ng-model="textRemove" placeholder="Quote to Remove"></input>
+				<input type="text" ng-model="textRemove" placeholder="Quote to Remove"></input>
 				<button id="buttonR" ng-click="quotesRemove(textRemove)">Remove Quote</button>
 			</div>
 			<br />
 				
-				<input ng-model="searchTerm" placeholder="Filter"></input>
+				<input type="text" ng-model="searchTerm" placeholder="Filter"></input>
 			
 		</div>
 	
