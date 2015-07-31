@@ -10,9 +10,9 @@ app.controller('mainCtrl', function($scope, QuoteFactory){
 	};
 	
 	$scope.quotesRemove = function(text){
-		var removeQuote = {};
-		for(var i = 0; i < QuoteFactory.getData; i++){
-			if(QuoteFactory.getData[i] === text){
+		var removeQuote = $scope.quotes;
+		for(var i = 0; i < removeQuote; i++){
+			if(removeQuote[i] === text){
 				QuoteFactory.removeData(text);
 			}
 		}
